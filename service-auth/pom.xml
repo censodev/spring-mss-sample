@@ -38,6 +38,10 @@
             <groupId>io.github.censodev</groupId>
             <artifactId>jwt-provider</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.github.censodev</groupId>
+            <artifactId>commons-api</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.h2database</groupId>

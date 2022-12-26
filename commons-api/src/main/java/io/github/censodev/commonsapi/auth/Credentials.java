@@ -1,19 +1,23 @@
 package io.github.censodev.commonsapi.auth;
 
 import io.github.censodev.jwtprovider.CanAuth;
-import lombok.Builder;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import java.util.Collection;
-import java.util.List;
 
 @Getter
 @Setter
-@Builder
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Credentials implements CanAuth {
-    private String username;
-    private List<RoleEnum> roles;
+    protected String username;
+    protected String password;
+    protected Collection<RoleEnum> roles;
 
     @Override
     public Object subject() {
