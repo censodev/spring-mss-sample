@@ -13,4 +13,14 @@
     <module>service-registry</module>
     <module>service-user</module>
   </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.github.censodev</groupId>
+        <artifactId>jwt-provider</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
