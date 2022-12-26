@@ -12,6 +12,7 @@
     <module>service-order</module>
     <module>service-registry</module>
     <module>service-user</module>
+    <module>commons-api</module>
   </modules>
 
   <dependencyManagement>
@@ -20,6 +21,11 @@
         <groupId>io.github.censodev</groupId>
         <artifactId>jwt-provider</artifactId>
         <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.censodev</groupId>
+        <artifactId>commons-api</artifactId>
+        <version>${project.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

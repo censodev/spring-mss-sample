@@ -1,6 +1,6 @@
 package io.github.censodev.gateway;
 
-import io.github.censodev.jwtprovider.CanAuth;
+import io.github.censodev.commonsapi.auth.Credentials;
 import io.github.censodev.jwtprovider.JwtProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,7 +30,7 @@ public class SecurityConfig {
                 .disable()
                 .cors()
                 .and()
-                .addFilterBefore(new AuthFilter<>(tokenProvider(), CanAuth.class), SecurityWebFiltersOrder.AUTHENTICATION)
+                .addFilterBefore(new AuthFilter<>(tokenProvider(), Credentials.class), SecurityWebFiltersOrder.AUTHENTICATION)
                 .authorizeExchange(auth -> auth
                         .pathMatchers("/api/auth/login", "/api/auth/signup").permitAll()
                         .anyExchange().authenticated()
