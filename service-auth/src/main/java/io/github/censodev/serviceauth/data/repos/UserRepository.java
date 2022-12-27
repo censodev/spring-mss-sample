@@ -1,5 +1,6 @@
-package io.github.censodev.serviceauth;
+package io.github.censodev.serviceauth.data.repos;
 
+import io.github.censodev.serviceauth.data.domains.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

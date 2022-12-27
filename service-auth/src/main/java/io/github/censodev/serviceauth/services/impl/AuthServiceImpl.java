@@ -1,14 +1,19 @@
-package io.github.censodev.serviceauth;
+package io.github.censodev.serviceauth.services.impl;
 
-import io.github.censodev.commonsapi.auth.RoleEnum;
+import io.github.censodev.serviceauth.data.enums.RoleEnum;
 import io.github.censodev.jwtprovider.JwtProvider;
+import io.github.censodev.serviceauth.data.domains.User;
+import io.github.censodev.serviceauth.data.dto.SignInReq;
+import io.github.censodev.serviceauth.data.dto.SignUpReq;
+import io.github.censodev.serviceauth.data.dto.Tokens;
+import io.github.censodev.serviceauth.data.repos.UserRepository;
+import io.github.censodev.serviceauth.services.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 

@@ -1,5 +1,10 @@
-package io.github.censodev.serviceauth;
+package io.github.censodev.serviceauth.web.controllers;
 
+import io.github.censodev.serviceauth.data.domains.User;
+import io.github.censodev.serviceauth.data.dto.SignInReq;
+import io.github.censodev.serviceauth.data.dto.SignUpReq;
+import io.github.censodev.serviceauth.data.dto.Tokens;
+import io.github.censodev.serviceauth.services.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,12 +24,12 @@ public class AuthController {
     }
 
     @GetMapping("login")
-    public AuthService.Tokens login(@RequestBody AuthService.SignInReq signInReq) {
+    public Tokens login(@RequestBody SignInReq signInReq) {
         return authService.signin(signInReq);
     }
 
     @GetMapping("signup")
-    public void signup(@RequestBody AuthService.SignUpReq signUpReq) {
+    public void signup(@RequestBody SignUpReq signUpReq) {
         authService.signup(signUpReq);
     }
 }
