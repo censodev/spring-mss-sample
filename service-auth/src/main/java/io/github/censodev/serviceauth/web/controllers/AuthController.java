@@ -1,9 +1,9 @@
 package io.github.censodev.serviceauth.web.controllers;
 
+import io.github.censodev.serviceauth.api.dto.SignInReq;
+import io.github.censodev.serviceauth.api.dto.SignUpReq;
+import io.github.censodev.serviceauth.api.dto.Tokens;
 import io.github.censodev.serviceauth.data.domains.User;
-import io.github.censodev.serviceauth.data.dto.SignInReq;
-import io.github.censodev.serviceauth.data.dto.SignUpReq;
-import io.github.censodev.serviceauth.data.dto.Tokens;
 import io.github.censodev.serviceauth.services.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;

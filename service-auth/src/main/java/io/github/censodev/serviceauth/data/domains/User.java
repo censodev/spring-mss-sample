@@ -1,6 +1,6 @@
 package io.github.censodev.serviceauth.data.domains;
 
-import io.github.censodev.serviceauth.data.enums.RoleEnum;
+import io.github.censodev.serviceauth.api.enums.RoleEnum;
 import io.github.censodev.jwtprovider.CanAuth;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

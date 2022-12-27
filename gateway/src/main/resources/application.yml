@@ -19,4 +19,4 @@ spring:
           predicates:
             - Path=/api/order/**
 auth:
-  secret: ${AUTH_SECRET}
+  secret: ${AUTH_SECRET:1234567890qwertyuiopasdfghjklzxcvbnm}

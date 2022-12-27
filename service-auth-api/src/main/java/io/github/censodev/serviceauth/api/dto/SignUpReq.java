@@ -1,6 +1,6 @@
-package io.github.censodev.serviceauth.data.dto;
+package io.github.censodev.serviceauth.api.dto;
 
-import io.github.censodev.serviceauth.data.enums.RoleEnum;
+import io.github.censodev.serviceauth.api.enums.RoleEnum;
 import lombok.Getter;
 import lombok.Setter;
 

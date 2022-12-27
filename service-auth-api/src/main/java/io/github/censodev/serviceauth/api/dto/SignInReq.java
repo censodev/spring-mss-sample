@@ -1,4 +1,4 @@
-package io.github.censodev.serviceauth.data.dto;
+package io.github.censodev.serviceauth.api.dto;
 
 import lombok.Getter;
 import lombok.Setter;

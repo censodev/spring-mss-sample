@@ -1,11 +1,11 @@
 package io.github.censodev.serviceauth.services.impl;
 
-import io.github.censodev.serviceauth.data.enums.RoleEnum;
 import io.github.censodev.jwtprovider.JwtProvider;
+import io.github.censodev.serviceauth.api.dto.SignInReq;
+import io.github.censodev.serviceauth.api.dto.SignUpReq;
+import io.github.censodev.serviceauth.api.dto.Tokens;
+import io.github.censodev.serviceauth.api.enums.RoleEnum;
 import io.github.censodev.serviceauth.data.domains.User;
-import io.github.censodev.serviceauth.data.dto.SignInReq;
-import io.github.censodev.serviceauth.data.dto.SignUpReq;
-import io.github.censodev.serviceauth.data.dto.Tokens;
 import io.github.censodev.serviceauth.data.repos.UserRepository;
 import io.github.censodev.serviceauth.services.AuthService;
 import lombok.RequiredArgsConstructor;

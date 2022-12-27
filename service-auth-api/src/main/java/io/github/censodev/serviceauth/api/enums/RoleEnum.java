@@ -1,4 +1,4 @@
-package io.github.censodev.serviceauth.data.enums;
+package io.github.censodev.serviceauth.api.enums;
 
 public enum RoleEnum {
     ROLE_ADMIN,
